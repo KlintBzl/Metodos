@@ -1,0 +1,136 @@
+1-
+public class K3Métodos {
+
+    public static void main(String[] args) {
+        tabuada(2);
+    }
+    public static void tabuada (int a){
+        int m;
+        do{
+        int n = 0;
+        m = a;
+        int R = n * m;
+        do {
+            System.out.println(m + "x" + n + "=" + R);
+            n++;
+            R= n * m; 
+        } while (n <= 10);
+        if(n > 10){
+            break;
+        }
+        }while(m > 0);
+    }
+}
+2-
+public class K3Métodos2 {
+
+    public static void main(String[] args) {
+        
+    Maior(4, 10);
+    }
+    public static void Maior (int a, int b){
+        
+        if (a > b){
+            System.out.println("O número " + a +" é Maior!");
+        }else if(a < b){
+            System.out.println("O número " + b +" é Maior!");
+        }
+
+    }
+}
+3-
+public class K3Métodos3 {
+    
+    public static void main(String[] args) {
+        sIguais();
+    }
+    public static void sIguais (){
+        String str1 = "De boa";
+        String str2 = "De buenas";
+        boolean Igual = str1.equalsIgnoreCase(str2);
+        if(Igual == true){
+            System.out.println("A string '" + str1 + "' e a string '" + str2 + "' SÃO iguais!");
+        } else{
+            System.out.println("A string '" + str1 + "' e a string '" + str2 + "' NÃO são iguais!");
+        }
+    }
+}
+4-
+public class K3Métodos4 {
+    
+    public static void main(String[] args) {
+        
+    Maior(8, 6);
+    }
+    public static void Maior (int a, int b){
+        
+        if (a > b){
+            System.out.println("O número " + b +" é Menor!");
+        }else if(a < b){
+            System.out.println("O número " + a +" é Menor!");
+        }
+    }
+}
+5-
+public class K3Métodos5 {
+
+    public static void main(String[] args) {
+        StringString("Klint","Klinte");
+    }
+    
+    public static boolean StringString (String s1, String s2){
+        boolean Igual= s1.equals(s2);
+        if(Igual == true){
+            System.out.println("Os nomes são iguais");
+        }else{
+            System.out.println("Os nomes não são iguais");
+        }
+        return Igual;
+        
+    }
+}
+6-
+public static void main(String[] args) {
+        
+        System.out.println("Celsius passados para Fahrenheit");
+        System.out.println(CPF(6.1));
+    }
+    
+    public static double CPF (double C){
+        return (C * 1.8) + 32;
+    }
+}
+7-
+public static void main(String[] args) {
+        
+        System.out.println("A area do cículo é: " + Area(6));
+    }
+    
+    public static double Area (double C){
+        return 3.14 * (C * C);
+    }
+}
+8-
+public static void main(String[] args) {
+        System.out.println("A média ponderada das notas é: " + MediaP(1,3,1));
+    }
+    
+    public static double MediaP (double N1, double N2, double N3){
+        if(N1 == 1 || N1 == 2){
+            N1 = 3;
+        }else if(N1 == 3){
+            N1 = 4;
+        }
+        if(N2 == 1 || N2 == 2){
+            N2 = 3;
+        }else if(N2 == 3){
+            N2 = 4;
+        }
+        if(N3 == 1 || N3 == 2){
+            N3 = 3;
+        }else if(N3 == 3){
+            N3 = 4;
+        }
+        return (N1 + N2 + N3) / 3;
+    }
+}
